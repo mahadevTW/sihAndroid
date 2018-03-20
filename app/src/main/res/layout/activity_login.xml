@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.bhakti.electricityapp.Login">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <ImageView
+            android:background="@drawable/background_gradient"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_marginTop="120dp"
+    android:id="@+id/layoutInput"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/background_white"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="84dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/UserName" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText3"
+            android:layout_alignRight="@+id/editText3"
+            android:layout_below="@+id/editText3"
+            android:layout_marginTop="73dp"
+            android:ems="10"
+            android:hint="@string/Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="98dp"
+            android:text="@string/Login" />
+
+
+
+
+</LinearLayout>
+
+<ImageView
+    android:id="@+id/imageVIew"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="5dp"
+    android:layout_centerHorizontal="true"
+    android:src="@mipmap/ic_launcher"
+    android:background="@drawable/background_white"
+    android:padding="5dp"
+    android:layout_width="70dp"
+    android:layout_height="70dp" />
+
+<TextView
+    android:textSize="20sp"
+    android:textColor="#FFF"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/imageVIew"
+    android:text="@string/SignIn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+</RelativeLayout>
+
+

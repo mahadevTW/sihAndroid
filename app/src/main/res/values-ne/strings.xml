@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Electricity App</string>
+    <string name="Registration">पंजीकरण</string>
+    <string name="Login">लग - इन</string>
+    <string name="NewConnection">नयाँ जडान</string>
+    <string name="QuickPay">" द्रुत भुक्तानी"</string>
+    <string name="UserName">" प्रयोगकर्ताको नाम"</string>
+    <string name="CustomerID">"ग्राहक परिचय "</string>
+    <string name="Contact">सम्पर्क</string>
+    <string name="Register">"दर्ता गर्नुहोस् "</string>
+    <string name="Password">पासवर्ड</string>
+    <string name="SignUp">" साइन अप"</string>
+    <string name="SignIn">साइन इन</string>
+    <string name="Viewmybill">"मेरो बिल हेर्नुहोस् "</string>
+    <string name="ViewBill">"बिल हेर्नुहोस् "</string>
+    <string name="History">इतिहास</string>
+    <string name="RegisterComplaint">"दर्ता गर्नुहोस् "</string>
+    <string name="Notifications">"सूचनाहरू "</string>
+    <string name="Welcome">"स्वागत छ "</string>
+    <string name="SelectCom">" निम्न प्रायः प्रचण्डका कुनै पनि पनि छान्नुहोस्"</string>
+    <string name="SelectCom2">"नयाँ उजुरी लेख्नुहोस् "</string>
+    <string name="WriteHere">"यहाँ लेख्नुहोस् ... "</string>
+    <string name="SendComplaint">"उजुरी पठाउनुहोस् "</string>
+</resources>
