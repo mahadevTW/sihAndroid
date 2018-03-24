@@ -1,121 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.bhakti.electricityapp.NewConnection">
+    tools:context="com.example.bhakti.electricityapp.Registration">
 
-    <ScrollView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <AbsoluteLayout
+        <ImageView
+            android:background="@drawable/background_gradient"
+            android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_height="0dp" />
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_x="0dp"
-                android:layout_y="0dp"
-                android:text="Consumer Category "
-                android:textColor="@android:color/black"
-                android:textSize="24sp" />
+    </LinearLayout>
 
-            <Spinner
-                android:id="@+id/spinner"
+
+    <LinearLayout
+        android:id="@+id/layoutInput"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/background_white"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="380dp">
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_x="0dp"
-                android:layout_y="34dp"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="136dp" />
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="224dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_x="0dp"
+                    android:layout_y="0dp"
+                    android:text="Consumer Category "
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
 
-                android:layout_x="2dp"
-                android:layout_y="78dp"
-                android:text="Supply Category "
-                android:textColor="@android:color/black"
-                android:textSize="24sp" />
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_x="0dp"
+                    android:layout_y="34dp"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="136dp" />
 
-            <Spinner
-                android:id="@+id/spinner1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="224dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
 
-                android:layout_x="0dp"
-                android:layout_y="111dp"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="136dp" />
+                    android:layout_x="2dp"
+                    android:layout_y="78dp"
+                    android:text="Supply Category "
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="213dp"
-                android:layout_height="wrap_content"
-                android:layout_x="4dp"
-                android:layout_y="156dp"
-                android:text="Application Details "
-                android:textColor="@android:color/holo_blue_dark"
-                android:textSize="24sp" />
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="221dp"
-                android:layout_height="wrap_content"
-                android:layout_x="0dp"
-                android:layout_y="218dp"
-                android:text="Applicant Name :"
-                android:textColor="@android:color/black"
-                android:textSize="24sp" />
+                    android:layout_x="0dp"
+                    android:layout_y="111dp"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="136dp" />
 
-            <EditText
-                android:id="@+id/editText8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_x="0dp"
-                android:layout_y="252dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:hint="Enter Your Name" />
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="213dp"
+                    android:layout_height="wrap_content"
+                    android:layout_x="4dp"
+                    android:layout_y="156dp"
+                    android:text="Application Details "
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="215dp"
-                android:layout_height="wrap_content"
-                android:layout_x="5dp"
-                android:layout_y="312dp"
-                android:text="Address"
-                android:textColor="@android:color/black"
-                android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="221dp"
+                    android:layout_height="wrap_content"
+                    android:layout_x="0dp"
+                    android:layout_y="218dp"
+                    android:text="Applicant Name :"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
 
-            <EditText
-                android:id="@+id/editText9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_x="0dp"
-                android:layout_y="347dp"
-                android:ems="10"
-                android:hint="Enter Your Address" />
+                <EditText
+                    android:id="@+id/editText8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_x="0dp"
+                    android:layout_y="252dp"
+                    android:ems="10"
+                    android:hint="Enter Your Name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contact"
+                    android:inputType="textPersonName"
+                    android:maxLength="10" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Aadhar No."
+                    android:inputType="textPersonName"
+                    android:maxLength="10" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_x="5dp"
+                    android:layout_y="312dp"
+                    android:text="Address"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editText9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_x="0dp"
+                    android:layout_y="347dp"
+                    android:ems="10"
+                    android:hint="Enter Plot No." />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:hint="City"
+                    android:inputType="textPersonName"
+                    tools:layout_editor_absoluteX="2dp"
+                    tools:layout_editor_absoluteY="202dp" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:hint="Pin Code"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:layout_editor_absoluteY="30dp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
 
 
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_x="150dp"
-                android:layout_y="442dp"
-                android:text="Button" />
+            </LinearLayout>
+        </ScrollView>
 
-        </AbsoluteLayout>
-    </ScrollView>
-</LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="189dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Register"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+
+</RelativeLayout>
+

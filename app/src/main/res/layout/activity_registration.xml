@@ -34,14 +34,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="376dp"
-        android:layout_height="46dp"
-        android:hint="@string/UserName"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="30dp" />
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="376dp"
+            android:layout_height="46dp"
+            android:hint="@string/UserName"
+            android:inputType="textPersonName"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="30dp" />
 
     <EditText
         android:id="@+id/editText4"

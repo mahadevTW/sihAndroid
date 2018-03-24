@@ -29,6 +29,7 @@
         <activity android:name=".QuickPay" />
         <activity android:name=".PayOthers" />
         <activity android:name=".ReaderActivity" />
+        <activity android:name=".MyComplaint"></activity>
     </application>
 
 </manifest>

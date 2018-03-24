@@ -1,79 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.bhakti.electricityapp.Complaint">
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.bhakti.electricityapp.Registration">
+        tools:context="com.example.bhakti.electricityapp.Complaint"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/mainback"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="44dp"
-            android:text="@string/SelectCom"
-            android:textSize="24sp" />
+        android:layout_alignParentLeft="true"
 
-        <Spinner
-            android:id="@+id/spinner2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView6"
-            android:layout_marginTop="45dp" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="@string/SelectCom"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/button14"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="35dp"
-            android:text="@string/SelectCom2"
-            android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/button14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/spinner2"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="22dp"
-            android:text="@string/SendComplaint" />
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="28dp" />
 
-        <EditText
-            android:id="@+id/editText7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView7"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="39dp"
-            android:ems="10"
-            android:hint="@string/WriteHere"
-            android:inputType="textMultiLine" />
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/SendComplaint" />
 
-        <Button
-            android:id="@+id/button16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/button14"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/button14"
-            android:layout_marginBottom="33dp"
-            android:text="@string/SendComplaint" />
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/Or"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="24sp" />
 
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="@string/SelectCom2"
+        android:textSize="24sp" />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/button16"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="@string/WriteHere"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button14"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button14"
+        android:layout_marginBottom="27dp"
+        android:text="@string/SendComplaint" />
+</RelativeLayout>

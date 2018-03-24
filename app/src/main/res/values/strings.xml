@@ -21,4 +21,9 @@
     <string name="SignUp">Sign Up</string>
     <string name="SignIn">Sign In</string>
     <string name="Viewmybill">View my bill</string>
+    <string name="Or">Or</string>
+    <string name="PayByQRCode">Pay By QR Code</string>
+    <string name="PayOthers">Pay Others</string>
+    <string name="ScanMsg">Scan the QR code on Electricity bill and bill will get paid</string>
+    <string name="PayOthersMsg">Pay electricity bill of anyone by simply using his/her customer ID</string>
 </resources>
